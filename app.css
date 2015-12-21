@@ -77,11 +77,13 @@ html, body {
   line-height: 48px;
 }
 #clear-btn{
-  font-size: 14px;
+  height:48px;
+  line-height:48px;
+  font-size: 16px;
   position: absolute;
-  right: 10px;
-  top: 12px;
-  padding:3px;
+  right: 0px;
+  top: 0px;
+  padding: 0 10px;
   cursor: pointer;
   background-color: #2696FB;
 }
