@@ -4,7 +4,7 @@ Observer
 Simple JavaScript REPLE that keep track of what's in global scope.  
 Only built & tested on OSX
 
-Try [online demo]('https://kosamari.github.io/observer/')
+Try [online demo](https://kosamari.github.io/observer/)
 
 ## Dependency
 In order to run this from source, you'll need electron installed.
