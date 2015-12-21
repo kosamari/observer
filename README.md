@@ -12,7 +12,7 @@ Download [OSX app](https://github.com/kosamari/observer/raw/master/observer.zip)
 In order to run this from source, you'll need electron installed.
 `npm install -g electron`
 
-## To started
+## To start
 ```
 cd [repo's directory]
 npm install
