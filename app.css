@@ -35,12 +35,12 @@ html, body {
 }
 /* The command history */
 .jqconsole-old-prompt {
-    color: #999;
+    color: #aaa ;
     font-weight: normal;
 }
 /* The text color of the output. */
 .jqconsole-output {
-    color: #999;
+    color: #aaa;
 }
 
 /* resize bars */

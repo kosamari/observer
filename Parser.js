@@ -32,6 +32,10 @@ function Parser () {
             }
           })
           return tmp
+        }else if (el.expression.type === 'CallExpression') {
+          if (el.expression.callee.object) {
+            return [el.expression.callee.object.name]
+          }
         }
       }
     }

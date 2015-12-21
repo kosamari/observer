@@ -96,7 +96,18 @@ $(function () {
       var val = window[p[i]]
       var value
       try {
-        value = val.toString().split('\n').join('<br>').split(' ').join('&nbsp;')
+        if (typeof val === 'object') {
+          if (Array.isArray(val)) {
+            value = JSON.stringify(val, 0, 0)
+          } else {
+            value = JSON.stringify(val, 0, 2)
+          }
+        } else {
+          value = val.toString().split('\n').join('<br>').split(' ').join('&nbsp;')
+          if (value.indexOf('[native&nbsp;code]') > -1) {
+            continue
+          }
+        }
       } catch (e) {
         value = val
       }
