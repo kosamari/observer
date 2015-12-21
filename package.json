@@ -1,0 +1,8 @@
+{
+  "name": "observer",
+  "version": "0.1.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron-packager": "^5.2.0"
+  }
+}

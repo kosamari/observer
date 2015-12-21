@@ -1,0 +1,127 @@
+html, body {
+  background-color:#e5e5e5;
+  font-family: 'helvetica', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* The console container element */
+#console {
+  color:#fff;
+  height: 100%;
+  background-color:#232323;
+  font-family: monospace;
+  position:absolute;
+  left:0;
+  top:0;
+  word-wrap: break-word;
+  font-size: 18px;
+}
+/* The inner console element. */
+.jqconsole {
+    padding: 20px;
+}
+/* The cursor. */
+.jqconsole-cursor {
+    background-color: #666;
+}
+/* The cursor color when the console looses focus. */
+.jqconsole-blurred .jqconsole-cursor {
+    background-color: #333;
+}
+/* The current prompt text color */
+.jqconsole-prompt {
+    color: #fff;
+}
+/* The command history */
+.jqconsole-old-prompt {
+    color: #999;
+    font-weight: normal;
+}
+/* The text color of the output. */
+.jqconsole-output {
+    color: #999;
+}
+
+/* resize bars */
+#verticalbar{
+  height: 100%;
+  cursor: col-resize;
+  background-color: #999;
+  position:absolute;
+  top:0;
+  z-index: 1000;
+}
+#horizontalbar{
+  width: 100%;
+  cursor: row-resize;
+  background-color:#999;
+}
+
+/*right pane*/
+#controller {
+  height: 100%;
+  overflow: scroll;
+  top:0;
+}
+.menu-title {
+  display: block;
+  height: 48px;
+  padding-left:20px;
+  border-bottom: solid 2px #666;
+}
+.menu-title h2{
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+  line-height: 48px;
+}
+#clear-btn{
+  font-size: 14px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  padding:3px;
+  cursor: pointer;
+  background-color: #2696FB;
+}
+
+#scope{
+  width:100%;
+  overflow: scroll;
+}
+#scope table{
+  word-wrap: break-word;
+  width:100%;
+  border-collapse: collapse;
+}
+th,td{
+  height:30px;
+}
+th{
+  border-left: 2px solid #c9c9c9;
+  border-bottom: 2px solid #c9c9c9;
+}
+td{
+  border: 2px solid #c9c9c9;
+  padding:0px 10px;
+  font-size:18px;
+}
+
+#log{
+  width:100%;
+  overflow: scroll;
+}
+#log ul{
+  padding-left: 0px;
+}
+#log li{
+  list-style-type: none;
+  padding-left: 20px;
+  font-size: 18px;
+  height:30px;
+  line-height: 30px;
+}
+#log li:nth-child(odd) {
+  background-color: #cecece
+}
